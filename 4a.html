@@ -1,0 +1,146 @@
+4a
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CSS Selector Types Demo</title>
+
+    <style>
+        body {
+            font-family: Arial;
+        }
+
+        h1 {
+            color: darkred;
+            text-align: center;
+        }
+
+        h2 {
+            color: purple;
+        }
+
+        /* Simple selectors */
+        .element {
+            color: orange;
+            font-weight: bold;
+        }
+
+        .classSel {
+            border: 1px solid green;
+            padding: 5px;
+        }
+
+        /* Group selector */
+        h3, .group {
+            color: purple;
+        }
+
+        /* Descendant selector */
+        div p {
+            background-color: lightblue;
+            font-weight: bold;
+        }
+
+        /* Adjacent sibling */
+        h4 + p {
+            color: red;
+            font-weight: bold;
+        }
+
+        /* General sibling */
+        h5 ~ p {
+            color: green;
+            font-weight: bold;
+        }
+
+        /* Pseudo-class selectors */
+        a:hover {
+            color: red;
+        }
+
+        input:focus {
+            border: 2px solid black;
+        }
+
+        li:first-child {
+            color: green;
+            font-weight: bold;
+        }
+
+        /* Pseudo-element selectors */
+        .pseudo::first-letter {
+            color: red;
+            font-size: 25px;
+            font-weight: bold;
+        }
+
+        /* Attribute selectors */
+        input[type="text"] {
+            border: 2px solid blue;
+        }
+
+        input[type="password"] {
+            border: 2px solid red;
+        }
+
+        .google {
+            color: green;
+            font-weight: bold;
+            text-decoration: none;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>CSS Selector Types Demo</h1>
+
+    <h2>Simple Selectors</h2>
+    <p class="element">This is element selector example ✓</p>
+    <p class="classSel">This is class selector example</p>
+
+    <h2>Group Selector Example</h2>
+    <p class="group">Group Selector Applied</p>
+
+    <h2>Combinatory Selectors</h2>
+    <div>
+        <p>Descendant selector example ✓</p>
+    </div>
+
+    <p>Child selector example</p>
+
+    <h2>Adjacent Sibling</h2>
+    <h4>Heading</h4>
+    <p>This paragraph is styled by adjacent sibling selector ✓</p>
+
+    <h2>General Sibling</h2>
+    <h5>Heading</h5>
+    <p>General sibling example 1 ✓</p>
+    <p>General sibling example 2 ✓</p>
+
+    <hr>
+
+    <h2>Pseudo-Class Selectors</h2>
+    <a href="#">Hover over this link</a><br><br>
+    <input type="text" value="Focus me">
+
+    <ul>
+        <li>First item</li>
+        <li>Second item</li>
+    </ul>
+
+    <hr>
+
+    <h2>Pseudo-Element Selectors</h2>
+    <p class="pseudo">This is pseudo-element example paragraph. ✓</p>
+
+    <hr>
+
+    <h2>Attribute Selectors</h2>
+    <input type="text" value="Selectors"><br><br>
+    <input type="password" value="password"><br><br>
+
+    <a href="https://www.google.com" class="google">Google Link</a>
+
+</body>
+</html>
+

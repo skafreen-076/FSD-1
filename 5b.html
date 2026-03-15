@@ -1,0 +1,65 @@
+5b
+<!DOCTYPE html>
+<html>
+<head>
+<title>Fixed Background Image Example</title>
+
+<style>
+
+/* Apply background to whole page */
+body {
+  margin: 0;
+  height: 2000px; /* makes page scroll */
+
+  /* using online image (always works) */
+  background-image: url("https://www.w3schools.com/css/img_tree.png");
+
+  /* place image halfway down the page */
+  background-position: center 50%;
+
+  /* repeat image horizontally */
+  background-repeat: repeat-x;
+
+  /* keep image fixed when scrolling */
+  background-attachment: fixed;
+}
+
+/* page content styling */
+h1 {
+  text-align: center;
+  margin-top: 20px;
+}
+
+p {
+  padding: 20px;
+}
+
+</style>
+</head>
+
+<body>
+
+<h1>Background Image Fixed Example</h1>
+
+<p>
+Scroll this page up and down to see the background image stay fixed
+while repeating horizontally across the page. The image is placed
+halfway down the page.
+</p>
+
+<p>
+Keep scrolling to observe that the background image does not move.
+This is because of the background-attachment: fixed property.
+</p>
+
+<p>
+More content for scrolling...<br><br>
+More content for scrolling...<br><br>
+More content for scrolling...<br><br>
+More content for scrolling...<br><br>
+More content for scrolling...<br><br>
+More content for scrolling...<br><br>
+</p>
+
+</body>
+</html>
