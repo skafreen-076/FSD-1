@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Date Object Example</title>
+</head>
+
+<body>
+
+<h2>Date Object Demo</h2>
+<p id="output"></p>
+
+<script>
+
+// Creating a date object
+var today = new Date();
+
+// Using Date methods
+var fullDate = today.toDateString();   // Full date
+var year = today.getFullYear();        // Year
+var month = today.getMonth() + 1;      // Month (0-11, so +1)
+var day = today.getDate();             // Day of month
+var hours = today.getHours();          // Hours
+var minutes = today.getMinutes();      // Minutes
+var seconds = today.getSeconds();      // Seconds
+
+// Display output
+document.getElementById("output").innerHTML =
+    "Full Date: " + fullDate + "<br>" +
+    "Year: " + year + "<br>" +
+    "Month: " + month + "<br>" +
+    "Day: " + day + "<br>" +
+    "Time: " + hours + ":" + minutes + ":" + seconds;
+
+</script>
+
+</body>
+</html>

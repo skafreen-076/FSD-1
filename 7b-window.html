@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Window Object Example</title>
+</head>
+
+<body>
+
+<h2>Window Object Demo</h2>
+
+<button onclick="showDetails()">Show Details</button>
+<button onclick="openNewWindow()">Open Window</button>
+
+<script>
+
+// Function to show window properties
+function showDetails() {
+
+    // window.innerWidth & innerHeight (properties)
+    var width = window.innerWidth;
+    var height = window.innerHeight;
+
+    // alert() method
+    alert("Width: " + width + " Height: " + height);
+
+    // confirm() method
+    var result = window.confirm("Do you like this page?");
+    
+    if(result) {
+        window.alert("Thank you!");
+    } else {
+        window.alert("We will improve!");
+    }
+}
+
+// Function to open a new window
+function openNewWindow() {
+    window.open("https://www.google.com", "_blank");
+}
+
+</script>
+
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>RegExp Object Example</title>
+</head>
+
+<body>
+
+<h2>RegExp Object Demo</h2>
+<p id="output"></p>
+
+<script>
+
+// Creating a regular expression
+var pattern = /JavaScript/i;   // 'i' → case-insensitive
+
+var text = "I am learning javascript";
+
+// Using test() method → checks if pattern exists
+var resultTest = pattern.test(text);
+
+// Using exec() method → returns matched result
+var resultExec = pattern.exec(text);
+
+// Using string match() method with regex
+var resultMatch = text.match(pattern);
+
+// Display output
+document.getElementById("output").innerHTML =
+    "Text: " + text + "<br>" +
+    "Pattern: /JavaScript/i <br>" +
+    "Test Result: " + resultTest + "<br>" +
+    "Exec Result: " + resultExec + "<br>" +
+    "Match Result: " + resultMatch;
+
+</script>
+
+</body>
+</html>

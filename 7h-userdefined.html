@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>User Defined Object</title>
+</head>
+
+<body>
+
+<h2>User Defined Object Demo</h2>
+<p id="output"></p>
+
+<script>
+
+// Constructor function
+function Student(name, age, marks) {
+    this.name = name;      // property
+    this.age = age;        // property
+    this.marks = marks;    // property
+
+    // Method
+    this.display = function() {
+        return "Name: " + this.name + 
+               ", Age: " + this.age + 
+               ", Marks: " + this.marks;
+    };
+}
+
+// Creating object
+var s1 = new Student("Thanuja", 20, 90);
+
+// Adding accessor (getter & setter)
+Object.defineProperty(s1, "grade", {
+    get: function() {
+        if (this.marks >= 90) return "A";
+        else if (this.marks >= 75) return "B";
+        else return "C";
+    },
+    set: function(value) {
+        this.marks = value;
+    }
+});
+
+// Using setter
+s1.grade = 85;
+
+// Displaying output
+document.getElementById("output").innerHTML =
+    s1.display() + "<br>" +
+    "Grade: " + s1.grade;
+
+</script>
+
+</body>
+</html>

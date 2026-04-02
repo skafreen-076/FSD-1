@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>String Object Example</title>
+</head>
+
+<body>
+
+<h2>String Object Demo</h2>
+<p id="output"></p>
+
+<script>
+
+// Creating a string
+var text = "Hello JavaScript";
+
+// Using string properties and methods
+var lengthValue = text.length;                // Length of string
+var upperCase = text.toUpperCase();           // Convert to uppercase
+var lowerCase = text.toLowerCase();           // Convert to lowercase
+var char = text.charAt(6);                    // Character at index
+var index = text.indexOf("JavaScript");       // Find position
+var sliceText = text.slice(0, 5);             // Extract part
+
+// Display output
+document.getElementById("output").innerHTML =
+    "Original String: " + text + "<br>" +
+    "Length: " + lengthValue + "<br>" +
+    "Uppercase: " + upperCase + "<br>" +
+    "Lowercase: " + lowerCase + "<br>" +
+    "Character at index 6: " + char + "<br>" +
+    "Index of 'JavaScript': " + index + "<br>" +
+    "Slice (0 to 5): " + sliceText;
+
+</script>
+
+</body>
+</html>

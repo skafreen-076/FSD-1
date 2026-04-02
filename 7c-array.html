@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Array Object Example</title>
+</head>
+
+<body>
+
+<h2>Array Object Demo</h2>
+<p id="output"></p>
+
+<script>
+
+// Creating an array
+var fruits = ["Apple", "Banana", "Mango"];
+
+// Using length property
+var len = fruits.length;
+
+// Using push() method (add element)
+fruits.push("Orange");
+
+// Using pop() method (remove last element)
+fruits.pop();
+
+// Using join() method (convert to string)
+var result = fruits.join(", ");
+
+// Display output
+document.getElementById("output").innerHTML =
+    "Array Length: " + len + "<br>" +
+    "Final Array: " + result;
+
+</script>
+
+</body>
+</html>

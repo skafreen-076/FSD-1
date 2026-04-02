@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Math Object Example</title>
+</head>
+
+<body>
+
+<h2>Math Object Demo</h2>
+<p id="output"></p>
+
+<script>
+
+// Using Math properties
+var piValue = Math.PI;
+
+// Using Math methods
+var num = 4.7;
+
+var roundValue = Math.round(num);   // Rounds to nearest integer
+var ceilValue = Math.ceil(num);     // Rounds up
+var floorValue = Math.floor(num);   // Rounds down
+var sqrtValue = Math.sqrt(16);      // Square root
+var powerValue = Math.pow(2, 3);    // 2^3
+
+// Display output
+document.getElementById("output").innerHTML =
+    "PI Value: " + piValue + "<br>" +
+    "Round: " + roundValue + "<br>" +
+    "Ceil: " + ceilValue + "<br>" +
+    "Floor: " + floorValue + "<br>" +
+    "Square Root of 16: " + sqrtValue + "<br>" +
+    "2 Power 3: " + powerValue;
+
+</script>
+
+</body>
+</html>
